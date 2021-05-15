@@ -1,4 +1,4 @@
-# Deobfuscate java X code
+# Deobfuscate code
 
 Need to deobfuscate the code given by some malicious teacher ? Here is a tool to help you so.
 
@@ -9,6 +9,11 @@ Need to deobfuscate the code given by some malicious teacher ? Here is a tool to
 3. You cleaned code is inside`input/Main.java`.
 
 ## Notes
+
+### Useful links
+
+[unicode finder](https://babelstone.co.uk/Unicode/whatisit.html)
+
 
 ### Potential characters
 

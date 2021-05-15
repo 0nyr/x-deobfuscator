@@ -9,8 +9,8 @@ with open(filename, 'r') as file :
 
 # Replace the target string
 filedata = filedata.replace('‍', '') # U+200D
-filedata = filedata.replace(' ', '') # U+2002
-filedata = filedata.replace(' ', '') # U+2003
+filedata = filedata.replace(' ', ' ') # U+2002
+filedata = filedata.replace(' ', ' ') # U+2003
 
 # Write the file out again
 with open(filename, 'w') as file:
