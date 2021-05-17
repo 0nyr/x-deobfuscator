@@ -1,26 +1,64 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang='fr'>
+    <head>
+        <title>x-deobfuscator</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="description" content="Votre avenir geek aujourd'hui !">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- open graph protocol for social medias, more info: https://ogp.me/-->
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:title" content="Predict'if" />
+        <meta property="og:type" content="services" />
+        <meta property="og:url" content="https://www.predict-if.com/index.html/" />
+        <!-- bootstrap 5 (WARN: load boostrap before personal js, else break hide/show) -->
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- personal css (WARN: load before personal js) -->
+        <!-- <link rel="stylesheet" type="text/css" href="./css/general_reset_stylesheet.css" /> -->
+        <link rel="stylesheet" type="text/css" href="./css/general_stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="./css/index.css" />
+        <!-- personal js -->
+        <script src="./js/display.js" defer></script>
+        <script src="./js/index.js" defer></script>
+    </head>
 
-<h1>X-Deobfuscator</h1>
+    <body class="container">
+        <nav id="header">
+            <div id="website_logo">
+                <h1>x-deobfuscator</h1>
+            </div>
+            <label class="switch">
+                <input type="checkbox" onclick="toggleTheme()">
+                <span class="slider round"></span>
+            </label>
 
-Enter some code here<br>
-<textarea id="myTextarea">
-342 Alvin Road
-Ducksburg</textarea>
+        </nav>
 
-<p>Click the button to get the content of the text area.</p>
+        <section id="title">
+            <h2>X-Deobfuscator</h1>
+            <p>Deobfuscate code from erroneous unicode characters.</p>
+        </section>
 
-<button type="button" onclick="myFunction()">Try it</button>
+        <section id="code_area">
+            <p>
+                Enter some code here
+            </p>
+            <textarea id="code_textarea">
+int[‍] t = new int[‍] { 4, 7, 6, 3, 2, 1, 8, 5 };
+t[7] = 8;
+int[‍] u = t;
+u[0] = 5;
+System.out.println(t[0] + " " + u[7]);
+            </textarea>
+            <button id="deobfuscate" type="button" onclick="deobfuscate('code_textarea')">
+                Deobfuscate
+            </button>
+            <p id="demo"></p>
+        </section>
 
-<p id="demo"></p>
+        <footer>
+            <p>© 2021. <a href="https://onyr.net">Onyr</a> (Florian Rascoussier)</p>
+        </footer>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTextarea").value;
-  document.getElementById("demo").innerHTML = x;
-}
-</script>
-
-</body>
+    </body>
 </html>
