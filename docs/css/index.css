@@ -1,7 +1,9 @@
 /* general settings */
 textarea {
     min-width: 500px;
-    min-height: 300px;
+    width: 100%;
+    min-height: 375px;
+    margin-bottom: 45px;
 }
 
 /* grid page layout */
@@ -29,7 +31,7 @@ footer {
         "footer footer footer footer";
 }
 
-/* elements */
+/* grid elements */
 
 #nav_title {
     align-self: center;
@@ -50,13 +52,13 @@ footer {
 }
 
 
+
 #legal {
     align-self: center;
     grid-area: legal;
 }
 
 #bottom_footer {
-    min-height: 8%;
     background-color: var(--container-soft-dark-color);
     display: grid;
     grid-template-columns: 3% 10% auto auto 10% 3%;
@@ -64,4 +66,24 @@ footer {
     grid-template-areas: 
         ". . legal legal . .";
 }
+
+/* single elements */
+#website_logo {
+    display: block;
+    align-self: center;
+    padding: 3%;
+}
+
+#legal {
+    display: block;
+    align-self: center;
+    padding: 3%;
+}
+
+#title {
+    display: block;
+    align-self: center;
+    padding: 3%;
+}
+
 

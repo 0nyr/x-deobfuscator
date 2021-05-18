@@ -10,6 +10,13 @@
     --container-light-bg-color: #a3dbff;
     --text-color: #000;
     --title-color: #a63d19;
+    /* color gradients */
+    --left-orange-color: #ff8a00;
+    --right-red-color: #da1b60;
+    --orange-red-gradient: linear-gradient(to right,
+        var(--left-orange-color),
+        var(--right-red-color)
+    );
     /* font-family */
     --text-font: 'Quicksand', sans-serif;
     --title-font: 'Macondo Swash Caps', cursive;
@@ -25,15 +32,17 @@ html, body {
 h1, h2, h3, h4, button {
     font-family: var(--title-font);
     font-weight: 700;
-	font-size: 40px;
+	font-size: 2em;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3em;
 }
 
 p, th, td {
     font-family: var(--text-font);
+    font-size: 1.5em;
+    padding: 1%;
 }
 
 /* colors */
@@ -136,7 +145,7 @@ button {
 	text-align: center;
 	margin: 10px;
 	display: inline-block;
-	background: linear-gradient(to right,#ff8a00,#da1b60);
+	background: var(--orange-red-gradient);
 	border-radius: 30px;
 	color: black;
 	float: right;

@@ -1,8 +1,17 @@
 
 falsyCharsRegex = [
-    /‍/g, // U+200D
-    / /g, // U+2002
-    / /g // U+2003
+    {
+        "regex": /‍/g, // U+200D
+        "replacer": ""
+    },
+    {
+        "regex": / /g, // U+2002
+        "replacer": " " // replace with space
+    },
+    {
+        "regex": / /g, // U+2003
+        "replacer": " " // replace with space
+    }
 ];
 
 function clearContents(element) {
@@ -14,8 +23,8 @@ function areFalsyCharactersPresent(str) {
     let result = false;
     // use every instead of forEach() https://masteringjs.io/tutorials/fundamentals/foreach-break
     // stops iterating through the array whenever the callback function returns a falsy value.
-    falsyCharsRegex.every((regex) => {
-        if(str.search(regex) != -1) {
+    falsyCharsRegex.every((falsyChar) => {
+        if(str.search(falsyChar.regex) != -1) {
             result = true;
             return false;
         }
@@ -33,8 +42,8 @@ function checkFalsyCharactersPresence(str) {
 }
 
 function cleanStrFromFalsyChars(str) {
-    falsyCharsRegex.forEach((regex) => {
-        str = str.replace(regex, "");
+    falsyCharsRegex.forEach((falsyChar) => {
+        str = str.replace(falsyChar.regex, falsyChar.replacer);
     });
     return str;
 }
