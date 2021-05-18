@@ -16,6 +16,13 @@ Need to deobfuscate the code given by some malicious teacher ? Here is a tool to
 
 [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
 
+##### css
+
+[css grid guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+[css flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+
 ### Potential characters
 
 * invisible separator U+2063
