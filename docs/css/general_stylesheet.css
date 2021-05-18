@@ -6,6 +6,7 @@
     /* colors */
     --bg-color: #57bdff;
     --container-dark-bg-color: #1c70a6;
+    --container-soft-dark-color: #3c93d4;
     --container-light-bg-color: #a3dbff;
     --text-color: #000;
     --title-color: #a63d19;
@@ -43,7 +44,6 @@ h1, h2, h3, h4 {
 p, th, td {
     color: var(--text-color);
 }
-
 
 /* logos */
 /* center element inside another: http://css-workshop.com/css-center-textimagediv-in-middle-of-parent-div-container/ */

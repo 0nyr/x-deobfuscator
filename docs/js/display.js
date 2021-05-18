@@ -20,6 +20,7 @@ function setRootStyle(property, value) {
 function setLightTheme() {
     setRootStyle("--bg-color", "#57bdff");
     setRootStyle("--container-dark-bg-color", "#1c70a6");
+    setRootStyle("--container-soft-dark-color", "#3c93d4");
     setRootStyle("--container-light-bg-color", "#a3dbff");
     setRootStyle("--text-color", "#000");
     setRootStyle("--title-color", "#a63d19");
@@ -30,6 +31,7 @@ function setLightTheme() {
 function setDarkTheme() {
     setRootStyle("--bg-color", "#0b344f");
     setRootStyle("--container-dark-bg-color", "#032033");
+    setRootStyle("--container-soft-dark-color", "#082a41");
     setRootStyle("--container-light-bg-color", "#5788a7");
     setRootStyle("--text-color", "#fff");
     setRootStyle("--title-color", "#bd5c3b");

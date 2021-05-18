@@ -1,6 +1,67 @@
-
-
+/* general settings */
 textarea {
     min-width: 500px;
     min-height: 300px;
 }
+
+/* grid page layout */
+header {
+    background-color: var(--container-soft-dark-color);
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    background-color: var(--container-soft-dark-color);
+    grid-area: footer;
+}
+
+#grid_main_container {
+    display: grid;
+    grid-template-columns: 5% auto auto 5%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        ". main main ."
+        "footer footer footer footer";
+}
+
+/* elements */
+
+#nav_title {
+    align-self: center;
+    grid-area: nav_title;
+}
+
+#theme_toggler {
+    align-self: center;
+    grid-area: theme_toggler;
+}
+
+#top_nav {
+    display: grid;
+    grid-template-columns: 3% 40% auto auto 10% 3%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". nav_title . . theme_toggler .";
+}
+
+
+#legal {
+    align-self: center;
+    grid-area: legal;
+}
+
+#bottom_footer {
+    min-height: 8%;
+    background-color: var(--container-soft-dark-color);
+    display: grid;
+    grid-template-columns: 3% 10% auto auto 10% 3%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". . legal legal . .";
+}
+

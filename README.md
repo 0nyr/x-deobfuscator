@@ -14,6 +14,7 @@ Need to deobfuscate the code given by some malicious teacher ? Here is a tool to
 
 [unicode finder](https://babelstone.co.uk/Unicode/whatisit.html)
 
+[GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
 
 ### Potential characters
 
