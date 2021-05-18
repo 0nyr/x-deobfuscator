@@ -43,6 +43,10 @@
             <p>
                 Enter some code here
             </p>
+            <button id="clear" type="button" 
+            onclick="clearTextarea(['code_textarea', 'result_textarea'])">
+                Clear
+            </button>
             <textarea id="code_textarea">
 int[‍] t = new int[‍] { 4, 7, 6, 3, 2, 1, 8, 5 };
 t[7] = 8;
@@ -50,7 +54,8 @@ int[‍] u = t;
 u[0] = 5;
 System.out.println(t[0] + " " + u[7]);
             </textarea>
-            <button id="deobfuscate" type="button" onclick="deobfuscate('code_textarea')">
+            <button id="deobfuscate" type="button" 
+            onclick="deobfuscate('code_textarea')">
                 Deobfuscate
             </button>
             <p id="demo"></p>
@@ -58,7 +63,8 @@ System.out.println(t[0] + " " + u[7]);
         </section>
 
         <footer>
-            <p>© 2021. <a href="https://onyr.net">Onyr</a> (Florian Rascoussier)</p>
+            <p>© 2021. <a href="https://onyr.net">Onyr</a> 
+            (Florian Rascoussier)</p>
         </footer>
 
     </body>
